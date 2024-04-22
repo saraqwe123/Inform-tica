@@ -12,21 +12,32 @@
 
 .container {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 35vw 65vw;
 }
 
 
 .conexao_login {
     background-color: var(--azul);
+    height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
+.imagens {
+    width: 30vw;
+    height: 10vh;
+}
+
+img {
+    height: 99vh;
+    width: 64vw;
+}
+
 .formulario {
     background-color: var(--azul);
-    height: 64.5vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,5 +46,18 @@
 
 input {
     padding: 3%;
+    border-radius: 10px;
+    border: 0;
+    margin: 2%;
+}
+
+button {
+    background-color: var(--branca);
+    width: 10vw;
+    height: 5vh;
+    margin: 5vh;
+    text-align: center;
+    color: var(--azul);
+    padding: 2%;
     border-radius: 10px;
 }
