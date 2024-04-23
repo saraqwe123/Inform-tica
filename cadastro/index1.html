@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="pt-br">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro</title>
+        <title>Document</title>
         <link rel="stylesheet" href="estilo1.css">
         <script src="javascript1.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="conexao_login">
-                <a href="/login/index.html"><strong>LOGIN</strong></a>
-                <strong>CADASTRO</strong>
-            </div>
-            <div class="imagens">
-                <img src="imagem com tons 8b461e4f-6037-4f1b-a5fa-404d10f6938f.png" alt="">
-            </div>
-           <div class="formulario">
+        <button class="botao1" id="botao" onclick='menu()'>
+            &#9776
+        </button>
+        <ul class="menu_lista" id="menu">
+            <li><a href="">LOGIN</a></li>
+        </ul>
+        <div class="formulario">
             <form action="">
                 <label for="icpf">CPF</label>
                 <br>
-                <input type="number" id="icpf" name="cpf" required>
+                <input type="text" name="" id="icpf" required size="35" style="background-color: #F1F3F6">
                 <br>
                 <label for="irg">RG</label>
                 <br>
-                <input type="number" id="irg" name="rg" required>
-                <br>
-                <label for="inumero">Número</label>
-                <br>
-                <input type="number" id="inumero" name="numero" required>
+                <input type="text" name="" id="irg" required size="35" style="background-color: #F1F3F6">
                 <br>
                 <label for="iemail">Email</label>
                 <br>
-                <input type="email" id="iemail" name="email" required>
+                <input type="email" name="" id="iemail" required size="35" style="background-color: #F1F3F6">
                 <br>
-                <label for="inome">Nome de usuário</label>
+                <label for="">Usuário Premium?</label>
                 <br>
-                <input type="text" id="inome" name="nome" required>
+                <label for="">
+                    <input type="radio" name="resposta" value="Sim">Sim
+                </label>
+                <label for="">
+                    <input type="radio" name="resposta" value="Não">Não
+                </label>
                 <br>
-                <label for="isenha">Senha</label>
-                <input type="password" id="isenha" name="senha" required minlength="5">
+                <label for="iproduto">Responsável por algum produto?</label>
                 <br>
+                <input type="text" name="" id="iproduto" placeholder="Informe apenas se for" size="35" style="background-color: #F1F3F6">
+                <br>
+                <label for="inome">Nome User</label>
+                <br>
+                <input type="text" name="" id="inome" required size="35" style="background-color: #F1F3F6">
+                <br>
+                <label for="isenha">Senha User</label>
+                <br>
+                <input type="password" name="" id="isenha" required minlength="5" placeholder="5 digitos" size="35" style="background-color: #F1F3F6">
+                <br>
+                <input type="submit" onclick="cadastro()">
             </form>
-            <button>ENVIAR</button>
-           </div>
-        </div> 
+        
+        </div>
     </body>
 </html>
