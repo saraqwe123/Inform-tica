@@ -58,5 +58,9 @@ input {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 12px;
-    
+    width: 115%;
+}
+
+.bolinha {
+    width: 10%;
 }
