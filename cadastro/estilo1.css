@@ -6,14 +6,17 @@
 }
 
 :root {
-    --branca: rgba(255, 255, 255, 0.932);
-    --preta: rgb(0, 0, 0);
-    --azul: rgba(76, 76, 219, 0.677);
-    --cinza: rgba(48, 43, 43, 0.623);
+    --branca: #ffffff;
+    --preta: #000000;
+    --azul: #001f3f;
+    --vermelha: #800020;
 }
 
 body {
-    background-color: var(--azul);
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--azul), var(--vermelha));
+    color: var(--branca);
 }
 
 
@@ -52,6 +55,13 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+form {
+    padding: 3%;
+    border: 1px solid var(--branca);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, var(--vermelha), var(--azul));
 }
 
 input {
