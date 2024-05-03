@@ -1,53 +1,43 @@
 * {
     padding: 0;
     margin: 0;
-    border: 0;
-    list-style: none;
 }
 
 :root {
-    --branca: rgba(255, 255, 255, 0.932);
+    --branca: white;
     --preta: rgb(0, 0, 0);
-    --azul: rgba(76, 76, 219, 0.677);
-    --cinza: rgba(48, 43, 43, 0.623);
+    --azul: rgba(70, 70, 214, 0.89);
+    --vermelha: red;
 }
 
-body {
+.container {
+    display: grid;
+    grid-template-columns: 35vw 65vw;
+}
+
+
+.conexao_login {
     background-color: var(--azul);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-.botao1 {
-    font-size: 30px;
-    margin-top: 30px;
-    margin-left: 30px;
-    background-color: transparent;
-    color: var(--branca);
-    cursor: pointer;
+.imagens {
+    width: 30vw;
+    height: 10vh;
 }
 
-.menu_lista {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: none;
-    margin: 30px;
-    margin-left: 20px;
-}
-
-
-a {
-    color: var(--cinza);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--branca);
-    
+img {
+    height: 99vh;
+    width: 64vw;
 }
 
 .formulario {
-    height: 80vh;
-    width: 100vw;
+    background-color: var(--azul);
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,8 +45,19 @@ a:hover {
 }
 
 input {
-    padding: 10px;
+    padding: 3%;
     border-radius: 10px;
-    margin-bottom: 12px;
-    width: 115%;
+    border: 0;
+    margin: 2%;
+}
+
+button {
+    background-color: var(--branca);
+    width: 10vw;
+    height: 5vh;
+    margin: 5vh;
+    text-align: center;
+    color: var(--azul);
+    padding: 2%;
+    border-radius: 10px;
 }
