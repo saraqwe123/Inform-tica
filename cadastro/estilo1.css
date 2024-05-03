@@ -23,12 +23,15 @@ body {
 
 
 .botao1 {
+    height: 5vh;
+    width: 5vw;
     font-size: 30px;
     margin-top: 30px;
     margin-left: 30px;
     background-color: transparent;
     color: var(--branca);
     cursor: pointer;
+    */ver com o professor por que está aumentando a tela
 }
 
 .menu_lista {
@@ -71,4 +74,11 @@ input {
     border-radius: 10px;
     margin-bottom: 12px;
     
+}
+
+.btn {
+    width: 100%;
+    padding: 5%;
+    margin-top:5%;
+    cursor: 
 }
