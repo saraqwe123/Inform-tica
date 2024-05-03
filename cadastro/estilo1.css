@@ -31,7 +31,6 @@ body {
     background-color: transparent;
     color: var(--branca);
     cursor: pointer;
-    */ver com o professor por que está aumentando a tela
 }
 
 .menu_lista {
@@ -73,12 +72,18 @@ input {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 12px;
-    
+    margin-top: 10px;
 }
 
 .btn {
     width: 100%;
     padding: 5%;
     margin-top:5%;
-    cursor: 
+    cursor: pointer;
+    background-color: var(--azul);
+    color: var(--branca);
+}
+
+.btn:hover {
+    background-color: var(--vermelha);
 }

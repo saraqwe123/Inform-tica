@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
-    <h1>saraaaarra</h1>
+    <button class="botao1" id="botao" onclick='menu()'>
+        &#9776
+    </button>
+    <ul class="menu_lista" id="menu">
+        <li><a href="../login/index.html">LOGIN</a></li>
+    </ul>
+    <div class="formulario">
+        <form action="">
+            <label for="inome">Nome User</label>
+            <br>
+            <input type="text" name="" id="inome" required size="35" style="background-color: #F1F3F6">
+            <br>
+            <label for="isenha">Senha User</label>
+            <br>
+            <input type="password" name="" id="isenha" required minlength="5" placeholder="5 digitos" size="35" style="background-color: #F1F3F6">
+            <input class="btn" type="submit" onclick="cadastro()">
+        </form>
+    </div>
 </body>
 </html>
