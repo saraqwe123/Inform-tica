@@ -18,8 +18,9 @@ function cadastro() {
     var resp_produto = document.getElementById("iproduto").value
     var nome = document.getElementById("inome").value
     var senha = document.getElementById("isenha").value
+    var premium = document.getElementById("ipremium")
 
-    let inputs = [cpf, rg, email, resp_produto, nome, senha]
+    let inputs = [cpf, rg, email, resp_produto, nome, senha, premium]
 
     let i = 0
     for (let input  of inputs) {
