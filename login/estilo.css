@@ -1,63 +1,92 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
+    list-style: none;
 }
 
 :root {
-    --branca: white;
-    --preta: rgb(0, 0, 0);
-    --azul: rgba(70, 70, 214, 0.89);
-    --vermelha: red;
-}
+    --branca: #ffffff;
+    --preta: #000000;
+    --vermelha: #800020;
+    --azul: #001f3f;
 
-.container {
-    display: grid;
-    grid-template-columns: 35vw 65vw;
 }
 
 
-.conexao_login {
-    background-color: var(--azul);
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--azul) 30%, var(--vermelha));
+    color: var(--branca);
 }
 
-.imagens {
-    width: 30vw;
-    height: 10vh;
+
+.botao1 {
+    height: 5vh;
+    width: 5vw;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: transparent;
+    color: var(--branca);
+    cursor: pointer;
 }
 
-img {
-    height: 99vh;
-    width: 64vw;
+.menu_lista {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    margin: 30px;
+    margin-left: 20px;
+}
+
+
+a {
+    color: var(--cinza);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--branca);
+    
 }
 
 .formulario {
-    background-color: var(--azul);
-    height: 85vh;
+    height: 80vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input {
+form {
     padding: 3%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    border: 0;
-    margin: 2%;
+    background-image: linear-gradient(to bottom right, var(--vermelha), var(--azul));
 }
 
-button {
-    background-color: var(--branca);
-    width: 10vw;
-    height: 5vh;
-    margin: 5vh;
-    text-align: center;
-    color: var(--azul);
-    padding: 2%;
+
+input {
+    width: 94%;
+    padding: 10px;
     border-radius: 10px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 5%;
+    margin-top:5%;
+    cursor: pointer;
+    background-color: var(--azul);
+    color: var(--branca);
+}
+
+.btn:hover {
+    background-color: var(--vermelha);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
