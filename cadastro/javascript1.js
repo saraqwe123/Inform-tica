@@ -1,26 +1,24 @@
-function menu(){
-    var menu = document.getElementById('menu')
-    var botao = document.getElementById('botao')
-    
-    if (menu.style.display === "none") {
-        botao.style.display = "none"
-        menu.style.display = "block"
+const menu = document.getElementById('menu');
+
+function adc_menu(event) {
+    if (!menu.contains(event.target) && event.target.id !== 'botao') {
+        menu.classList.remove("aparecer");
+        //!menu.contains ve se esta fora do menu, se nao tivesse a ! veria se esta dentro//
     } else {
-        botao.style.display = "block"
-        menu.style.display = "none"
+        menu.classList.toggle("aparecer");
     }
 }
+
+document.addEventListener("click", adc_menu);
 
 function cadastro() {
     var cpf = document.getElementById("icpf").value
     var rg = document.getElementById("irg").value
     var email = document.getElementById("iemail").value
-    var resp_produto = document.getElementById("iproduto").value
     var nome = document.getElementById("inome").value
-    var senha = document.getElementById("isenha").value
-    var premium = document.getElementById("ipremium")
 
-    let inputs = [cpf, rg, email, resp_produto, nome, senha, premium]
+
+    let inputs = [cpf, rg, email, nome]
 
     let i = 0
     for (let input  of inputs) {
