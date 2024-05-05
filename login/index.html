@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
+
 <body>
-    <button class="botao1" id="botao" onclick='menu()'>
+    <button class="botao1" id="botao">
         &#9776
     </button>
     <ul class="menu_lista" id="menu">
-        <li><a href="../cadastro/index1.html">CADASTRO</a></li>
+        <div class="menu_conteudo">
+            <li><a href="../login/index.html">LOGIN</a></li>
+            <li><a href="index1.html">PÁGINA PRINCIPAL</a></li>
+        </div>
     </ul>
     <div class="formulario">
         <form action="">
@@ -22,9 +26,12 @@
             <br>
             <label for="isenha">Senha User</label>
             <br>
-            <input type="password" name="" id="isenha" required minlength="5" placeholder="5 digitos" size="35" style="background-color: #F1F3F6">
+            <input type="password" name="" id="isenha" required minlength="5" placeholder="5 digitos" size="35"
+                style="background-color: #F1F3F6">
+            <br>
             <input class="btn" type="submit" onclick="cadastro()">
         </form>
     </div>
 </body>
+
 </html>
