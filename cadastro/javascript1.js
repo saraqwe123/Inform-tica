@@ -16,20 +16,22 @@ function cadastro() {
     var rg = document.getElementById("irg").value
     var email = document.getElementById("iemail").value
     var nome = document.getElementById("inome").value
+    var senha = document.getElementById("isenha").value
+    var premium = document.getElementById("ipremium").value
 
 
-    let inputs = [cpf, rg, email, nome]
+    let inputs = [cpf, rg, email, nome, senha, premium]
 
     let i = 0
     for (let input  of inputs) {
-        if (input != "" && email.indexOf("@") != -1 && senha.lenght >= 5) {
-            i += ""
+        if (input !== "" && email.indexOf("@") !== -1 && senha.length >= 5 && premium.toUpperCase() === "NÃO" || premium.toUpperCase() === "SIM" || premium.toLowerCase() === "sim" || premium.toLowerCase() === "não") {
+            i += 0
         } else {
             i += 1
         }
-    }
-    
-    if (i != "") {
+    }   
+
+    if (i != 0) {
         alert("Preencha os campos corretamente!")
     } else {
         alert("Cadastro realizado com sucesso!")
