@@ -25,7 +25,6 @@ body {
     overflow: hidden;
 }
 
-
 .botao1 {
     padding: 0;
     font-size: 30px;
@@ -82,43 +81,12 @@ li {
 
 li:hover {
     border-bottom: 1px solid var(--vermelha)
-
 }
 
-.formulario {
-    height: 80vh;
+.meio {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-form {
-    padding: 3%;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom right, var(--preta), var(--azul));
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-}
-
-input {
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    
-}
-
-.btn {
-    width: 100%;
-    padding: 5%;
-    margin-top:5%;
-    cursor: pointer;
-    background-color: var(--azul);
-    color: var(--branca);
-    font-size: 15px;
-}
-
-.btn:hover {
-    background-color: var(--preta);
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
 }
