@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo1.css">
@@ -43,9 +43,9 @@
             <input type="password" name="" id="isenha" required minlength="5" placeholder="5 digitos" size="35"
                 style="background-color: #F1F3F6">
             <br>
-            <label for="">Usuário Premium?</label>
+            <label for="">Chave?</label>
             <br>
-            <input type="text" name="" id="ipremium" placeholder="Sim ou Não" required size="35" style="background-color: #F1F3F6">
+            <input type="text" name="" id="ipremium" placeholder="Para usuários supremos" required size="35" style="background-color: #F1F3F6">
             <br>
             <input class="btn" type="submit" onclick="cadastro()">
         </form>
