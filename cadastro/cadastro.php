@@ -50,6 +50,28 @@
             <input class="btn" type="submit" onclick="cadastro()">
         </form>
     </div>
+
+    <?php
+
+//verificando se houve um click no botao, caso houver, ele irá conectar o nossa pag conexao.php
+
+if(isset($_POST['submit'])) {
+    include_once('conexao.php');
+
+    $cpf = $_POST['cpf'];
+    $rg = $_POST['rg'];
+    $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
+    $premium = $_POST['premium'];
+
+    $usuarios = mysqli_query($conexao, "INSERT INTO cadastro_usuarios(cpf, rg, email, nome_usuario, senha_usuario, chave) VALUES('$cpf', '$rg', '$nome', '$senha', '$premium')");
+
+
+
+}
+
+
+?>
 </body>
 
 </html>
