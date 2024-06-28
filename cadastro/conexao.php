@@ -2,11 +2,12 @@
 
 $host = 'localhost';
 $usuario = 'root';
-$senha = 'sara.sara';
+$senha = '';
 $banco = 'controle_patrimonio';
+$porta = '3307';
 
 //VARIAVEL PRA FAZER A CONEXAO COM O MYSQL
-$conexao = new mysqli ($host, $usuario, $senha, $banco);
+$conexao = new mysqli($host, $usuario, $senha, $banco, $porta);
 
 //verificando a conexao
 if ($conexao->connect_errno) {
@@ -14,50 +15,74 @@ if ($conexao->connect_errno) {
     echo "Erro de conexão com o banco de dados: " . $conexao->connect_error;
 } else {
 
-?>
+    ?>
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="../pagina_principal/estilo2.css">
+        <link rel="stylesheet" href="estilo2.css">
         <script src="../pagina_principal/javascript2.js" defer></script>
     </head>
 
     <body>
-        <button class="botao1" id="botao">
-            &#9776
-        </button>
-        <ul class="menu_lista" id="menu">
-            <div class="menu_conteudo">
-                <li><a href="../cadastro/cadastro.php">CADASTRO</a></li>
-                <li><a href="../login/login.php">LOGIN</a></li>
-                <li><a href="../modulo_01/index3.html">MÓDULO 01</a></li>
-                <li><a href="../modulo_02/index4.html">MÓDULO 02</a></li>
+        <header>
+            <div>
+                <img class="top" src="./imagem/salvar.png" alt="">
+                salvar
             </div>
-        </ul>
-        <div class="meio">
-            <table>
-            <thead><h1>TABELA DE ITENS</h1></thead>
-            <tr>
-                <th>id item</th>
-                <th>nome</th>
-                <th>descrição</th>
-                <th>valor estimado</th>
-                <th>id categoria</th>
-                <th>marca</th>
-                <th>local item</th>
-                <th></th>
-            </table>
-
-            </tr>
+            <div>
+                <img class="top" src="./imagem/impressao.png" alt="">
+                imprimir
+            </div>
+            <div>
+                <img class="top" src="./imagem/cancelar.png" alt="">
+                cancelar
+            </div>
+            <div>
+                <img class="top" src="./imagem/lixeira.png" alt="">
+                excluir
+            </div>
+        </header>
+        <div class="container">
+            <p id="dois">consulta</p>
+            <p id="tres">cadastro</p>
+            <div class="meio">
+                Cadastro de Itens
+            </div>
+            <form action="">
+                <label for="icategoria" id="label0">Selecione a categoria do item</label>
+                <input type="text" id="icategoria">
+                <label for="inome" id="label0">Nome do item</label>
+                <input type="text" id="inome" name="nome">
+                <input type="checkbox">
+            </form>
+            <div class="informacoes">
+                <label for="ilocal" id="label1">Local do item</label>
+                <input type="text" id="ilocal" name="local">
+                <label for="idescricao" id="label2">Descrição</label>
+                <input type="text" id="idescricao" name="descricao">
+                <label for="imarca" id="label3">Marca</label>
+                <input type="text" id="imarca" name="marca">
+                <label for="idata" id="label4">Data de entrada</label>
+                <input type="text" id="idata" name="data">
+                <label for="ivalor" id="label5">Valor estimado</label>
+                <input type="text" id="ivalor" name="valor">
+                <label for="inergia" id="label6">Quantidade de energia</label>
+                <input type="text" id="inergia" name="energia">
+            </div>
+            <div class="fotos">
+                imagem
+            </div>
         </div>
-    </body>
-</html>
 
-<?php
+    </body>
+
+    </html>
+
+    <?php
 }
 ?>
